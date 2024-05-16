@@ -11,7 +11,6 @@ import 'package:flutter_widget_from_html/flutter_widget_from_html.dart'
         OnErrorBuilder,
         OnLoadingBuilder,
         ImageMetadata,
-        RebuildTriggers,
         RenderMode;
 
 import 'package:flutter/material.dart';
@@ -142,7 +141,6 @@ class WidgetsWebViewOptions {
     this.onLoadingBuilder,
     this.onTapImage,
     this.onTapUrl,
-    this.rebuildTriggers,
     this.textStyle,
     this.enableCaching = true,
     this.renderMode = RenderMode.column,
@@ -158,7 +156,6 @@ class WidgetsWebViewOptions {
   final OnLoadingBuilder? onLoadingBuilder;
   final void Function(ImageMetadata)? onTapImage;
   final FutureOr<bool> Function(String)? onTapUrl;
-  final RebuildTriggers? rebuildTriggers;
   final RenderMode renderMode;
   final TextStyle? textStyle;
 }

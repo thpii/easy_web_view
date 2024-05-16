@@ -12,6 +12,7 @@ dependencies:
   easy_web_view:
     path: ../
 
+  async: any
 dev_dependencies:
   flutter_test:
     sdk: flutter
